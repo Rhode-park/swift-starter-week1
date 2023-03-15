@@ -6,7 +6,19 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-import Foundation
+func drawIcecreamBody() {
+    let lines = 8
+    for _ in 1...lines {
+        print("***********")
+    }
+}
 
-print("Hello, World!")
+func drawIcecreamBar() {
+    let lines = 4
+    for _ in 1...lines {
+        print("    | |")
+    }
+}
 
+drawIcecreamBody()
+drawIcecreamBar()
