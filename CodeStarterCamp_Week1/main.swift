@@ -6,19 +6,17 @@
 //  Copyright © yagom academy. All rights reserved.
 //
 
-func drawIcecreamBody() {
-    let lines = 8
+func drawIcecreamBody(lines: Int) {
     for _ in 1...lines {
         print("***********")
     }
 }
 
-func drawIcecreamBar() {
-    let lines = 4
+func drawIcecreamBar(lines: Int) {
     for _ in 1...lines {
         print("    | |")
     }
 }
 
-drawIcecreamBody()
-drawIcecreamBar()
+drawIcecreamBody(lines: 8)
+drawIcecreamBar(lines: 4)
