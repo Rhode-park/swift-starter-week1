@@ -9,6 +9,17 @@
 import Foundation
 
 struct PaepaeroFactory {
+    enum constant {
+        static let information = """
+                                <정보>
+                                길이: %d
+                                몸통: %@
+                                토핑: %@
+                                막대길이: %d
+                                
+                                """
+    }
+    
     func drawPaepaero(bodyLength: Int, body: String, topping: String, barLength: Int) {
         drawPaepaeroInformation(bodyLength: bodyLength, body: body, topping: topping, barLength: barLength)
         drawPaepaeroBody(bodyLength: bodyLength, body: body, topping: topping)
@@ -29,19 +40,6 @@ struct PaepaeroFactory {
         for _ in 1...barLength {
             print(" | |")
         }
-    }
-}
-
-extension PaepaeroFactory {
-    enum constant {
-        static let information = """
-                                <정보>
-                                길이: %d
-                                몸통: %@
-                                토핑: %@
-                                막대길이: %d
-                                
-                                """
     }
 }
 
