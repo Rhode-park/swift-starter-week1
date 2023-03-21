@@ -15,17 +15,17 @@ struct PaepaeroFactory {
         drawPaepaeroBar(barLength: barLength)
     }
     
-    func drawPaepaeroInformation(bodyLength: Int, body: String, topping: String, barLength: Int) {
+    private func drawPaepaeroInformation(bodyLength: Int, body: String, topping: String, barLength: Int) {
         print(String(format: constant.information, bodyLength, body, topping, barLength))
     }
     
-    func drawPaepaeroBody(bodyLength: Int, body: String, topping: String) {
+    private func drawPaepaeroBody(bodyLength: Int, body: String, topping: String) {
         for _ in 1...bodyLength {
             print(topping, body, topping, separator: "")
         }
     }
     
-    func drawPaepaeroBar(barLength: Int) {
+    private func drawPaepaeroBar(barLength: Int) {
         for _ in 1...barLength {
             print(" | |")
         }
