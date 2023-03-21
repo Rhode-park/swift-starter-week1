@@ -21,23 +21,23 @@ struct PaepaeroFactory {
     }
     
     func drawPaepaero(bodyLength: Int, body: String, topping: String, barLength: Int) {
-        drawPaepaeroInformation(bodyLength: bodyLength, body: body, topping: topping, barLength: barLength)
-        drawPaepaeroBody(bodyLength: bodyLength, body: body, topping: topping)
-        drawPaepaeroBar(barLength: barLength)
+        displayPaepaeroInformation(bodyLength: bodyLength, body: body, topping: topping, barLength: barLength)
+        drawPaepaeroBody(length: bodyLength, body: body, topping: topping)
+        drawPaepaeroBar(length: barLength)
     }
     
-    private func drawPaepaeroInformation(bodyLength: Int, body: String, topping: String, barLength: Int) {
+    private func displayPaepaeroInformation(bodyLength: Int, body: String, topping: String, barLength: Int) {
         print(String(format: constant.information, bodyLength, body, topping, barLength))
     }
     
-    private func drawPaepaeroBody(bodyLength: Int, body: String, topping: String) {
-        for _ in 1...bodyLength {
+    private func drawPaepaeroBody(length: Int, body: String, topping: String) {
+        for _ in 1...length {
             print(topping, body, topping, separator: "")
         }
     }
     
-    private func drawPaepaeroBar(barLength: Int) {
-        for _ in 1...barLength {
+    private func drawPaepaeroBar(length: Int) {
+        for _ in 1...length {
             print(" | |")
         }
     }
